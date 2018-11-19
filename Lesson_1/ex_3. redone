@@ -1,0 +1,42 @@
+print "a:"
+a = gets.to_i
+print "b:"
+b = gets.to_i
+print "c:"
+c = gets.to_i
+gip = nil
+kat1 = nil
+kat2 = nil
+if a > b && a > c &&  b != c
+	gip = a
+	kat1 = b
+	kat2 = c
+elsif b > a && b > c && a != c
+	gip = b
+	kat1 = a
+	kat2 = c
+elsif c > a && c > b && a != b
+	gip = c
+	kat1 = a
+	kat2 = b
+elsif b == c && a > b
+	gip = a
+	kat1 = b
+	kat2 = c
+	puts "равнобедренный;"
+elsif a == c && b > a
+	gip = b	
+	kat1 = a
+	kat2 = c
+	puts "равнобедренный;"	
+elsif a == b && c > a
+	gip = c	
+	kat1 = a
+	kat2 = b
+	puts "равнобедренный;"
+end
+if gip ** 2 == kat1 ** 2 = kat2 ** 2
+	puts "прямой."
+else 
+  puts "не прямой."
+end
