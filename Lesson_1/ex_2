@@ -1,0 +1,5 @@
+puts "основание:"
+a=gets
+puts "высота:"
+h=gets
+puts "площадь: #{0.5*a.to_i*h.to_i}"
