@@ -1,9 +1,8 @@
-a = 1
-arr = [1] #первую 1 невозможно поместить в цикл
-while a < 100
-	arr << a
-	a += a
+a = [0, 1]
+i = 0
+while a.last < 100
+	m = a[i] + a[i + 1]
+	a << m
+	i += 1
+	print " #{a[i]}"
 end
-print arr
-
-
