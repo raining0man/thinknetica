@@ -1,7 +1,8 @@
-letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-letters.each_with_index do |letter,id|
-	id += 1
-	if id % 2 == 0
-		print letter
-	end
+
+letters = ('a'..'z').to_a
+vowels = ["a", "e", "i", "o", "u", "y"]
+hash_vowels = {}
+letters.each_with_index do |letter, index|
+  hash_vowels[letter] = index + 1 if vowels.include?(letter)
 end
+puts hash_vowels
